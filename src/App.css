@@ -1,6 +1,11 @@
 .App {
-  text-align: center;
+  height: '100%';
 }
+
+ .rows .row {
+  display: flex;
+  flex-direction: row;
+ }
 
 .App-logo {
   height: 40vmin;
@@ -14,18 +19,83 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Nunito';
+
 }
 
-.App-link {
-  color: #61dafb;
+.Main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+  color: white;
+  font-family: 'Nunito';
+}
+
+.Text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Nunito';
+}
+
+.Policy-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: white;
+  font-family: 'Nunito';
+}
+
+.Download-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.List-content {
+  color: white;
+  font-family: 'Nunito';
+}
+
+@media screen and (max-width: 1000px) {
+  .Main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    padding-left: 10vmin;
+    color: white;
+    font-family: 'Nunito';
+  }
+
+  .Link {
+    padding-top: 0;
+  }
+
+  .Text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+    color: white;
+    font-family: 'Nunito';
+  }
 }
 
 @keyframes App-logo-spin {

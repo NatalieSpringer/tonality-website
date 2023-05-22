@@ -34,11 +34,10 @@ function App() {
   const text = "Practice Perfect Pitch. Learn to Read Music.";
 
   const handleClick = (source) => {
-    alert(source);
     if (source === "ios") {
-      
+      window.location.href = "https://apps.apple.com/us/app/tonality-perfect-pitch/id1560436633"
     } else {
-
+      window.location.href = "https://play.google.com/store/apps/details?id=com.tonality"
     }
   }
 
